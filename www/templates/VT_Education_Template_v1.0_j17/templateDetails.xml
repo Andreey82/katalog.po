@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://dev.joomla.org/xml/1.5/template-install.dtd">
+<extension version="1.6" type="template" client="site">
+<name>vt_education</name>
+<creationDate>2011/01/01</creationDate>
+<author>VTEM.NET</author>
+<authorEmail>tuyen0110@gmail.com</authorEmail>
+<authorUrl>http://www.vtem.net</authorUrl>
+<copyright>© copyright 2011 VTEM</copyright>
+<license>GNU/GPL</license>
+<version>1.0.0</version>
+<description><![CDATA[
+<h3>Overview of VTEM Templates</h3>
+<p>This Template is a generation template framework developed by VTEM for Joomla! 1.5 and above. This template is a sophisticated Joomla template framework with the sole intention of being the best platform to build a solid template with. This template takes all the lessons learned during the development of many VTEM templates and distills that knowledge into a single super-flexible framework that is easy to configure, simple to extend, and powerful enough to handle anything we want to throw at it.</p>
+<h3>Key Features</h3>
+<ul>
+   <li>960 Grid System (http://960.gs) for simple consistent layout. 12 and 16 column support</li>
+   <li>VTEM-menu control over all functionality</li>
+   <li>Ability to save/remove custom presets</li>
+   <li>Built-in AJAX Support</li>
+   <li>RTL language support</li>
+   <li>Support Google font - give you added control when using linked font</li>
+   <li>CSS & JS Compress - minify the number and weight of files</li>
+   <li>Multi-themes & User theme support.</li>
+</ul>
+]]></description>
+<files>
+<filename>component.php</filename>
+<filename>favicon.ico</filename>
+<filename>index.html</filename>
+<filename>params.ini</filename>
+<filename>template_thumbnail.png</filename>
+<filename>index.php</filename>
+<folder>css/</folder> 
+<folder>html/</folder> 
+<folder>images/</folder> 
+<folder>vtemtools/</folder> 
+</files>
+<positions>
+<position>header1</position>
+<position>header2</position>
+<position>header3</position>
+<position>header4</position>
+<position>header5</position>
+<position>header6</position>
+<position>feature1</position>
+<position>feature2</position>
+<position>feature3</position>
+<position>feature4</position>
+<position>feature5</position>
+<position>feature6</position>
+<position>left</position>
+<position>inset1</position>
+<position>inset2</position>
+<position>right</position>
+<position>bottom1</position>
+<position>bottom2</position>
+<position>bottom3</position>
+<position>bottom4</position>
+<position>bottom5</position>
+<position>bottom6</position>
+<position>footer1</position>
+<position>footer2</position>
+<position>footer3</position>
+<position>footer4</position>
+<position>footer5</position>
+<position>footer6</position>
+<position>analytics</position>
+<position>drawer</position>
+<position>showcase</position>
+<position>utility</position>
+<position>copyright</position>
+<position>debug</position>
+<position>breadcrumb</position>
+<position>top</position>
+</positions>
+<config>
+        <fields name="params">
+            <fieldset name="basic" addfieldpath="/templates/vt_education/vtemtools/fields">
+<field name="&lt;h2&gt; Settings &lt;/h2&gt;" type="spacer" default="" />
+        <field name="TemplateStyle" type="list" default="style1" label="Template Style" description="The Main Color Variation for the Template">
+			<option value="style1">Style 1</option>
+			<option value="style2">Style 2</option>
+			<option value="style3">Style 3</option>
+			<option value="style4">Style 4</option>
+			<option value="style5">Style 5</option>
+		</field>
+		<field name="layout" type="list" default="br" label="Template Layout" description="Layout style of the template">
+			<option value="br">Body + Right</option>
+			<option value="lb">Left + Body</option>
+		    <option value="lbr">Left + Body + Right</option>
+			<option value="lrb">Left + Right + Body</option>
+			<option value="brl">Body + right + Left</option>
+			<option value="wf">Wapper(Full width)</option>
+		</field>
+        <field name="logo" type="radio" default="0" label="Select logo type" description="Select image or text type logo.">
+			<option value="0">Image</option>
+			<option value="1">Text</option>
+		</field>
+		<field name="logotext" type="text" default="VTEM LOGO" label="Logo Text" description="Enter your logo text here. This setting take effect when the TEXT logo type is selected." />
+		<field name="slogan" type="text" default="Professional vision" label="Slogan" description="Enter a slogan line or short description. This will be visible below the TEXT logo in your front-end." />
+		<field name="copyright" type="radio" default="1" label="Copyright" description="Choose to show the copyright information and pick copyright position.">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</field>
+		<field name="SystemMessages" type="radio" default="1" label="System Messages" description="Joomla outputs System Messages, you can select if these show and which position they display in.">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</field>
+		<field name="IE6Warning" type="radio" default="1" label="IE6 Warning" description="Choose whether or not to display the IE6 Warning for IE6 Browser.">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</field>
+		<field name="GoogleAnalytics" type="radio" default="0" label="Google Analytics" description="">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</field>
+		<field name="gacode" type="text" default="" label="Google Analytics Code" description="Enter your Google tracking code in the UA Code field. It should look something like: UA-15655555-1" />
+		
+		
+		
+		
+		
+<field name="&lt;h2&gt; Menu &lt;/h2&gt;" type="spacer" default="" />
+		<field name="custommenu" type="radio" default="0" label="Custom menu" description="If you choose the custom menu parameter is [Module position] then It will display module position with module position name is MENU instead the value bellow of the template.">
+			<option value="0">Menu</option>
+			<option value="1">Module position</option>
+		</field>
+		<field name="menutype" type="menu" default="top" label="Menu Name" description="The name of the menu (default is mainmenu)"/>
+		<field name="menustyle" type="list" default="1" label="Menu style" description="MENU'S TYPE">
+		  <option value="1">Dropdown Menu</option>
+		  <option value="3">Dropline Menu</option>
+		</field>
+		<field name="usemootools" type="radio" default="1" label="Use mootools effects" description="Choose YES if you want to use mootools">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </field>
+        <field name="mootransition" type="list" default="fade" label="Transition" description="">
+			<option value="fade">Fade</option>
+			<option value="blindh">blindh</option>
+			<option value="blindv">blindv</option>
+			<option value="blink">blink</option>
+			<option value="shake">Shake</option>
+        </field>
+        <field name="startLevel" type="text" default="0" size="5" label="Start level" description="Level from which to show items" />
+	    <field name="endLevel" type="text" default="10" size="5" label="End level" description="Level until which to show items" />
+	 
+		
+		
+<field name="&lt;h2&gt; Features &lt;/h2&gt;" type="spacer" default="" />
+        <field name="customstyle" type="radio" default="0" label="Custom style" description="If you choose the custom style parameter is [YES] then the value bellow will override the value in current style of the template.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+        <field name="mainbackground" type="text" default="#222222" label="Background Color" description="Use the color chooser to select the color of the background" />
+		<field name="headerbackground" type="text" default="#333333" label="Header Color" description="Use the color chooser to select a color for header background" />
+		<field name="bottombackground" type="text" default="#333333" label="Bottom Color" description="Use the color chooser to select a color for bottom background" />
+		<field name="footerbackground" type="text" default="#252525" label="Footer Color" description="Use the color chooser to select a color for footer background" />
+		<field name="LinkColor" type="text" default="#669900" label="Link Color" description="Use the color chooser to select a color for links" />
+		<field name="fontsize" type="list" default="12px" label="Font size" description="Select the font size for your front-end.">
+			<option value="10px">10px</option>
+			<option value="11px">11px</option>
+			<option value="12px">12px</option>
+			<option value="13px">13px</option>
+			<option value="14px">14px</option>
+			<option value="15px">15px</option>
+		</field> 
+		<field name="spacer" type="spacer" default="" hr="true" /> 
+       <field name="webfont" type="radio" default="0" label="Google Font Directory" description="Font type allow you to use 3rd party Font type from providers such as Google.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="bodyfont" type="list" default="no" label="Body Font" description="This setting allows you to set a special font for all text content in your front-end.">
+<option value="no">-----Select-----</option>
+<option value="Droid Sans">Droid Sans</option>
+<option value="Droid Serif">Droid Serif</option>
+<option value="Lobster">Lobster</option>
+<option value="Yanone Kaffeesatz">Yanone Kaffeesatz</option>
+<option value="Nobile">Nobile</option>
+<option value="Reenie Beanie">Reenie Beanie</option>
+<option value="Tangerine">Tangerine</option>
+<option value="Neucha">Neucha</option>
+<option value="Josefin Slab">Josefin Slab</option>
+<option value="OFL Sorts Mill Goudy TT">OFL Sorts Mill Goudy TT</option>
+<option value="Molengo">Molengo</option>
+<option value="PT Sans">PT Sans</option>
+<option value="Vollkorn">Vollkorn</option>
+<option value="Just Me Again Down Here">Just Me Again Down Here</option>
+<option value="Ubuntu">Ubuntu</option>
+<option value="Cantarell">Cantarell</option>
+<option value="Inconsolata">Inconsolata</option>
+<option value="Crimson Text">Crimson Text</option>
+<option value="Cardo">Cardo</option>
+<option value="Cuprum">Cuprum</option>
+<option value="Droid Sans Mono">Droid Sans Mono</option>
+<option value="Neuton">Neuton</option>
+<option value="Arvo">Arvo</option>
+<option value="Philosopher">Philosopher</option>
+<option value="Old Standard TT">Old Standard TT</option>
+<option value="Josefin Sans">Josefin Sans</option>
+<option value="Covered By Your Grace">Covered By Your Grace</option>
+<option value="Arimo">Arimo</option>
+<option value="IM Fell">IM Fell</option>
+<option value="Geo">Geo</option>
+<option value="Copse">Copse</option>
+<option value="Raleway">Raleway</option>
+<option value="Allerta">Allerta</option>
+<option value="Just Another Hand">Just Another Hand</option>
+<option value="Tinos">Tinos</option>
+<option value="Puritan">Puritan</option>
+<option value="Mountains of Christmas">Mountains of Christmas</option>
+<option value="Cabin">Cabin</option>
+<option value="Sniglet">Sniglet</option>
+<option value="Allan">Allan</option>
+<option value="Lato">Lato</option>
+<option value="Orbitron">Orbitron</option>
+<option value="Vibur">Vibur</option>
+<option value="Gruppo">Gruppo</option>
+<option value="Allerta Stencil">Allerta Stencil</option>
+<option value="Cousine">Cousine</option>
+<option value="Syncopate">Syncopate</option>
+<option value="Merriweather">Merriweather</option>
+<option value="Kristi">Kristi</option>
+<option value="Anonymous Pro">Anonymous Pro</option>
+<option value="Coda">Coda</option>
+<option value="Corben">Corben</option>
+<option value="Buda">Buda</option>
+<option value="Bentham">Bentham</option>
+<option value="Lekton">Lekton</option>
+<option value="UnifrakturMaguntia">UnifrakturMaguntia</option>
+<option value="UnifrakturCook">UnifrakturCook</option>
+<option value="Kenia">Kenia</option>
+<option value="Rock Salt">Rock Salt</option>
+<option value="Calligraffitti">Calligraffitti</option>
+<option value="Cherry Cream Soda">Cherry Cream Soda</option>
+<option value="Chewy">Chewy</option>
+<option value="Coming Soon">Coming Soon</option>
+<option value="Crafty Girls">Crafty Girls</option>
+<option value="Crushed">Crushed</option>
+<option value="Fontdiner Swanky">Fontdiner Swanky</option>
+<option value="Homemade Apple">Homemade Apple</option>
+<option value="Irish Growler">Irish Growler</option>
+<option value="Kranky">Kranky</option>
+<option value="Luckiest Guy">Luckiest Guy</option>
+<option value="Permanent Marker">Permanent Marker</option>
+<option value="Schoolbell">Schoolbell</option>
+<option value="Slackey">Slackey</option>
+<option value="Sunshiney">Sunshiney</option>
+<option value="Unkempt">Unkempt</option>
+<option value="Walter Turncoat">Walter Turncoat</option>
+		</field>
+		<field name="logofont" type="list" default="no" label="Logo Font" description="If you use text logo then using Google Font for logo is highly RECOMMENDED. Most of Google fonts are very beautiful and charming for logo.">
+<option value="no">-----Select-----</option>
+<option value="Droid Sans">Droid Sans</option>
+<option value="Droid Serif">Droid Serif</option>
+<option value="Lobster">Lobster</option>
+<option value="Yanone Kaffeesatz">Yanone Kaffeesatz</option>
+<option value="Nobile">Nobile</option>
+<option value="Reenie Beanie">Reenie Beanie</option>
+<option value="Tangerine">Tangerine</option>
+<option value="Neucha">Neucha</option>
+<option value="Josefin Slab">Josefin Slab</option>
+<option value="OFL Sorts Mill Goudy TT">OFL Sorts Mill Goudy TT</option>
+<option value="Molengo">Molengo</option>
+<option value="PT Sans">PT Sans</option>
+<option value="Vollkorn">Vollkorn</option>
+<option value="Just Me Again Down Here">Just Me Again Down Here</option>
+<option value="Ubuntu">Ubuntu</option>
+<option value="Cantarell">Cantarell</option>
+<option value="Inconsolata">Inconsolata</option>
+<option value="Crimson Text">Crimson Text</option>
+<option value="Cardo">Cardo</option>
+<option value="Cuprum">Cuprum</option>
+<option value="Droid Sans Mono">Droid Sans Mono</option>
+<option value="Neuton">Neuton</option>
+<option value="Arvo">Arvo</option>
+<option value="Philosopher">Philosopher</option>
+<option value="Old Standard TT">Old Standard TT</option>
+<option value="Josefin Sans">Josefin Sans</option>
+<option value="Covered By Your Grace">Covered By Your Grace</option>
+<option value="Arimo">Arimo</option>
+<option value="IM Fell">IM Fell</option>
+<option value="Geo">Geo</option>
+<option value="Copse">Copse</option>
+<option value="Raleway">Raleway</option>
+<option value="Allerta">Allerta</option>
+<option value="Just Another Hand">Just Another Hand</option>
+<option value="Tinos">Tinos</option>
+<option value="Puritan">Puritan</option>
+<option value="Mountains of Christmas">Mountains of Christmas</option>
+<option value="Cabin">Cabin</option>
+<option value="Sniglet">Sniglet</option>
+<option value="Allan">Allan</option>
+<option value="Lato">Lato</option>
+<option value="Orbitron">Orbitron</option>
+<option value="Vibur">Vibur</option>
+<option value="Gruppo">Gruppo</option>
+<option value="Allerta Stencil">Allerta Stencil</option>
+<option value="Cousine">Cousine</option>
+<option value="Syncopate">Syncopate</option>
+<option value="Merriweather">Merriweather</option>
+<option value="Kristi">Kristi</option>
+<option value="Anonymous Pro">Anonymous Pro</option>
+<option value="Coda">Coda</option>
+<option value="Corben">Corben</option>
+<option value="Buda">Buda</option>
+<option value="Bentham">Bentham</option>
+<option value="Lekton">Lekton</option>
+<option value="UnifrakturMaguntia">UnifrakturMaguntia</option>
+<option value="UnifrakturCook">UnifrakturCook</option>
+<option value="Kenia">Kenia</option>
+<option value="Rock Salt">Rock Salt</option>
+<option value="Calligraffitti">Calligraffitti</option>
+<option value="Cherry Cream Soda">Cherry Cream Soda</option>
+<option value="Chewy">Chewy</option>
+<option value="Coming Soon">Coming Soon</option>
+<option value="Crafty Girls">Crafty Girls</option>
+<option value="Crushed">Crushed</option>
+<option value="Fontdiner Swanky">Fontdiner Swanky</option>
+<option value="Homemade Apple">Homemade Apple</option>
+<option value="Irish Growler">Irish Growler</option>
+<option value="Kranky">Kranky</option>
+<option value="Luckiest Guy">Luckiest Guy</option>
+<option value="Permanent Marker">Permanent Marker</option>
+<option value="Schoolbell">Schoolbell</option>
+<option value="Slackey">Slackey</option>
+<option value="Sunshiney">Sunshiney</option>
+<option value="Unkempt">Unkempt</option>
+<option value="Walter Turncoat">Walter Turncoat</option>
+		</field>
+		<field name="sloganfont" type="list" default="no" label="Slogan Font" description="Special font setting for your Slogan. This is applied if you use set Logo type = Text in Profile setting above.">
+<option value="no">-----Select-----</option>
+<option value="Droid Sans">Droid Sans</option>
+<option value="Droid Serif">Droid Serif</option>
+<option value="Lobster">Lobster</option>
+<option value="Yanone Kaffeesatz">Yanone Kaffeesatz</option>
+<option value="Nobile">Nobile</option>
+<option value="Reenie Beanie">Reenie Beanie</option>
+<option value="Tangerine">Tangerine</option>
+<option value="Neucha">Neucha</option>
+<option value="Josefin Slab">Josefin Slab</option>
+<option value="OFL Sorts Mill Goudy TT">OFL Sorts Mill Goudy TT</option>
+<option value="Molengo">Molengo</option>
+<option value="PT Sans">PT Sans</option>
+<option value="Vollkorn">Vollkorn</option>
+<option value="Just Me Again Down Here">Just Me Again Down Here</option>
+<option value="Ubuntu">Ubuntu</option>
+<option value="Cantarell">Cantarell</option>
+<option value="Inconsolata">Inconsolata</option>
+<option value="Crimson Text">Crimson Text</option>
+<option value="Cardo">Cardo</option>
+<option value="Cuprum">Cuprum</option>
+<option value="Droid Sans Mono">Droid Sans Mono</option>
+<option value="Neuton">Neuton</option>
+<option value="Arvo">Arvo</option>
+<option value="Philosopher">Philosopher</option>
+<option value="Old Standard TT">Old Standard TT</option>
+<option value="Josefin Sans">Josefin Sans</option>
+<option value="Covered By Your Grace">Covered By Your Grace</option>
+<option value="Arimo">Arimo</option>
+<option value="IM Fell">IM Fell</option>
+<option value="Geo">Geo</option>
+<option value="Copse">Copse</option>
+<option value="Raleway">Raleway</option>
+<option value="Allerta">Allerta</option>
+<option value="Just Another Hand">Just Another Hand</option>
+<option value="Tinos">Tinos</option>
+<option value="Puritan">Puritan</option>
+<option value="Mountains of Christmas">Mountains of Christmas</option>
+<option value="Cabin">Cabin</option>
+<option value="Sniglet">Sniglet</option>
+<option value="Allan">Allan</option>
+<option value="Lato">Lato</option>
+<option value="Orbitron">Orbitron</option>
+<option value="Vibur">Vibur</option>
+<option value="Gruppo">Gruppo</option>
+<option value="Allerta Stencil">Allerta Stencil</option>
+<option value="Cousine">Cousine</option>
+<option value="Syncopate">Syncopate</option>
+<option value="Merriweather">Merriweather</option>
+<option value="Kristi">Kristi</option>
+<option value="Anonymous Pro">Anonymous Pro</option>
+<option value="Coda">Coda</option>
+<option value="Corben">Corben</option>
+<option value="Buda">Buda</option>
+<option value="Bentham">Bentham</option>
+<option value="Lekton">Lekton</option>
+<option value="UnifrakturMaguntia">UnifrakturMaguntia</option>
+<option value="UnifrakturCook">UnifrakturCook</option>
+<option value="Kenia">Kenia</option>
+<option value="Rock Salt">Rock Salt</option>
+<option value="Calligraffitti">Calligraffitti</option>
+<option value="Cherry Cream Soda">Cherry Cream Soda</option>
+<option value="Chewy">Chewy</option>
+<option value="Coming Soon">Coming Soon</option>
+<option value="Crafty Girls">Crafty Girls</option>
+<option value="Crushed">Crushed</option>
+<option value="Fontdiner Swanky">Fontdiner Swanky</option>
+<option value="Homemade Apple">Homemade Apple</option>
+<option value="Irish Growler">Irish Growler</option>
+<option value="Kranky">Kranky</option>
+<option value="Luckiest Guy">Luckiest Guy</option>
+<option value="Permanent Marker">Permanent Marker</option>
+<option value="Schoolbell">Schoolbell</option>
+<option value="Slackey">Slackey</option>
+<option value="Sunshiney">Sunshiney</option>
+<option value="Unkempt">Unkempt</option>
+<option value="Walter Turncoat">Walter Turncoat</option>
+		</field>
+		<field name="menufont" type="list" default="no" label="Menu Font" description="This setting allows you to set a special font for your Main menu.">
+<option value="no">-----Select-----</option>
+<option value="Droid Sans">Droid Sans</option>
+<option value="Droid Serif">Droid Serif</option>
+<option value="Lobster">Lobster</option>
+<option value="Yanone Kaffeesatz">Yanone Kaffeesatz</option>
+<option value="Nobile">Nobile</option>
+<option value="Reenie Beanie">Reenie Beanie</option>
+<option value="Tangerine">Tangerine</option>
+<option value="Neucha">Neucha</option>
+<option value="Josefin Slab">Josefin Slab</option>
+<option value="OFL Sorts Mill Goudy TT">OFL Sorts Mill Goudy TT</option>
+<option value="Molengo">Molengo</option>
+<option value="PT Sans">PT Sans</option>
+<option value="Vollkorn">Vollkorn</option>
+<option value="Just Me Again Down Here">Just Me Again Down Here</option>
+<option value="Ubuntu">Ubuntu</option>
+<option value="Cantarell">Cantarell</option>
+<option value="Inconsolata">Inconsolata</option>
+<option value="Crimson Text">Crimson Text</option>
+<option value="Cardo">Cardo</option>
+<option value="Cuprum">Cuprum</option>
+<option value="Droid Sans Mono">Droid Sans Mono</option>
+<option value="Neuton">Neuton</option>
+<option value="Arvo">Arvo</option>
+<option value="Philosopher">Philosopher</option>
+<option value="Old Standard TT">Old Standard TT</option>
+<option value="Josefin Sans">Josefin Sans</option>
+<option value="Covered By Your Grace">Covered By Your Grace</option>
+<option value="Arimo">Arimo</option>
+<option value="IM Fell">IM Fell</option>
+<option value="Geo">Geo</option>
+<option value="Copse">Copse</option>
+<option value="Raleway">Raleway</option>
+<option value="Allerta">Allerta</option>
+<option value="Just Another Hand">Just Another Hand</option>
+<option value="Tinos">Tinos</option>
+<option value="Puritan">Puritan</option>
+<option value="Mountains of Christmas">Mountains of Christmas</option>
+<option value="Cabin">Cabin</option>
+<option value="Sniglet">Sniglet</option>
+<option value="Allan">Allan</option>
+<option value="Lato">Lato</option>
+<option value="Orbitron">Orbitron</option>
+<option value="Vibur">Vibur</option>
+<option value="Gruppo">Gruppo</option>
+<option value="Allerta Stencil">Allerta Stencil</option>
+<option value="Cousine">Cousine</option>
+<option value="Syncopate">Syncopate</option>
+<option value="Merriweather">Merriweather</option>
+<option value="Kristi">Kristi</option>
+<option value="Anonymous Pro">Anonymous Pro</option>
+<option value="Coda">Coda</option>
+<option value="Corben">Corben</option>
+<option value="Buda">Buda</option>
+<option value="Bentham">Bentham</option>
+<option value="Lekton">Lekton</option>
+<option value="UnifrakturMaguntia">UnifrakturMaguntia</option>
+<option value="UnifrakturCook">UnifrakturCook</option>
+<option value="Kenia">Kenia</option>
+<option value="Rock Salt">Rock Salt</option>
+<option value="Calligraffitti">Calligraffitti</option>
+<option value="Cherry Cream Soda">Cherry Cream Soda</option>
+<option value="Chewy">Chewy</option>
+<option value="Coming Soon">Coming Soon</option>
+<option value="Crafty Girls">Crafty Girls</option>
+<option value="Crushed">Crushed</option>
+<option value="Fontdiner Swanky">Fontdiner Swanky</option>
+<option value="Homemade Apple">Homemade Apple</option>
+<option value="Irish Growler">Irish Growler</option>
+<option value="Kranky">Kranky</option>
+<option value="Luckiest Guy">Luckiest Guy</option>
+<option value="Permanent Marker">Permanent Marker</option>
+<option value="Schoolbell">Schoolbell</option>
+<option value="Slackey">Slackey</option>
+<option value="Sunshiney">Sunshiney</option>
+<option value="Unkempt">Unkempt</option>
+<option value="Walter Turncoat">Walter Turncoat</option>
+		</field>
+		<field name="moduletitlefont" type="list" default="no" label="Module Title Font" description="This setting allows you to set a special font for module titles.">
+<option value="no">-----Select-----</option>
+<option value="Droid Sans">Droid Sans</option>
+<option value="Droid Serif">Droid Serif</option>
+<option value="Lobster">Lobster</option>
+<option value="Yanone Kaffeesatz">Yanone Kaffeesatz</option>
+<option value="Nobile">Nobile</option>
+<option value="Reenie Beanie">Reenie Beanie</option>
+<option value="Tangerine">Tangerine</option>
+<option value="Neucha">Neucha</option>
+<option value="Josefin Slab">Josefin Slab</option>
+<option value="OFL Sorts Mill Goudy TT">OFL Sorts Mill Goudy TT</option>
+<option value="Molengo">Molengo</option>
+<option value="PT Sans">PT Sans</option>
+<option value="Vollkorn">Vollkorn</option>
+<option value="Just Me Again Down Here">Just Me Again Down Here</option>
+<option value="Ubuntu">Ubuntu</option>
+<option value="Cantarell">Cantarell</option>
+<option value="Inconsolata">Inconsolata</option>
+<option value="Crimson Text">Crimson Text</option>
+<option value="Cardo">Cardo</option>
+<option value="Cuprum">Cuprum</option>
+<option value="Droid Sans Mono">Droid Sans Mono</option>
+<option value="Neuton">Neuton</option>
+<option value="Arvo">Arvo</option>
+<option value="Philosopher">Philosopher</option>
+<option value="Old Standard TT">Old Standard TT</option>
+<option value="Josefin Sans">Josefin Sans</option>
+<option value="Covered By Your Grace">Covered By Your Grace</option>
+<option value="Arimo">Arimo</option>
+<option value="IM Fell">IM Fell</option>
+<option value="Geo">Geo</option>
+<option value="Copse">Copse</option>
+<option value="Raleway">Raleway</option>
+<option value="Allerta">Allerta</option>
+<option value="Just Another Hand">Just Another Hand</option>
+<option value="Tinos">Tinos</option>
+<option value="Puritan">Puritan</option>
+<option value="Mountains of Christmas">Mountains of Christmas</option>
+<option value="Cabin">Cabin</option>
+<option value="Sniglet">Sniglet</option>
+<option value="Allan">Allan</option>
+<option value="Lato">Lato</option>
+<option value="Orbitron">Orbitron</option>
+<option value="Vibur">Vibur</option>
+<option value="Gruppo">Gruppo</option>
+<option value="Allerta Stencil">Allerta Stencil</option>
+<option value="Cousine">Cousine</option>
+<option value="Syncopate">Syncopate</option>
+<option value="Merriweather">Merriweather</option>
+<option value="Kristi">Kristi</option>
+<option value="Anonymous Pro">Anonymous Pro</option>
+<option value="Coda">Coda</option>
+<option value="Corben">Corben</option>
+<option value="Buda">Buda</option>
+<option value="Bentham">Bentham</option>
+<option value="Lekton">Lekton</option>
+<option value="UnifrakturMaguntia">UnifrakturMaguntia</option>
+<option value="UnifrakturCook">UnifrakturCook</option>
+<option value="Kenia">Kenia</option>
+<option value="Rock Salt">Rock Salt</option>
+<option value="Calligraffitti">Calligraffitti</option>
+<option value="Cherry Cream Soda">Cherry Cream Soda</option>
+<option value="Chewy">Chewy</option>
+<option value="Coming Soon">Coming Soon</option>
+<option value="Crafty Girls">Crafty Girls</option>
+<option value="Crushed">Crushed</option>
+<option value="Fontdiner Swanky">Fontdiner Swanky</option>
+<option value="Homemade Apple">Homemade Apple</option>
+<option value="Irish Growler">Irish Growler</option>
+<option value="Kranky">Kranky</option>
+<option value="Luckiest Guy">Luckiest Guy</option>
+<option value="Permanent Marker">Permanent Marker</option>
+<option value="Schoolbell">Schoolbell</option>
+<option value="Slackey">Slackey</option>
+<option value="Sunshiney">Sunshiney</option>
+<option value="Unkempt">Unkempt</option>
+<option value="Walter Turncoat">Walter Turncoat</option>
+		</field>
+		<field name="pageheadingfont" type="list" default="no" label="Page Heading Font" description="This setting allows you to set a special font for your content pages in front-end.">
+<option value="no">-----Select-----</option>
+<option value="Droid Sans">Droid Sans</option>
+<option value="Droid Serif">Droid Serif</option>
+<option value="Lobster">Lobster</option>
+<option value="Yanone Kaffeesatz">Yanone Kaffeesatz</option>
+<option value="Nobile">Nobile</option>
+<option value="Reenie Beanie">Reenie Beanie</option>
+<option value="Tangerine">Tangerine</option>
+<option value="Neucha">Neucha</option>
+<option value="Josefin Slab">Josefin Slab</option>
+<option value="OFL Sorts Mill Goudy TT">OFL Sorts Mill Goudy TT</option>
+<option value="Molengo">Molengo</option>
+<option value="PT Sans">PT Sans</option>
+<option value="Vollkorn">Vollkorn</option>
+<option value="Just Me Again Down Here">Just Me Again Down Here</option>
+<option value="Ubuntu">Ubuntu</option>
+<option value="Cantarell">Cantarell</option>
+<option value="Inconsolata">Inconsolata</option>
+<option value="Crimson Text">Crimson Text</option>
+<option value="Cardo">Cardo</option>
+<option value="Cuprum">Cuprum</option>
+<option value="Droid Sans Mono">Droid Sans Mono</option>
+<option value="Neuton">Neuton</option>
+<option value="Arvo">Arvo</option>
+<option value="Philosopher">Philosopher</option>
+<option value="Old Standard TT">Old Standard TT</option>
+<option value="Josefin Sans">Josefin Sans</option>
+<option value="Covered By Your Grace">Covered By Your Grace</option>
+<option value="Arimo">Arimo</option>
+<option value="IM Fell">IM Fell</option>
+<option value="Geo">Geo</option>
+<option value="Copse">Copse</option>
+<option value="Raleway">Raleway</option>
+<option value="Allerta">Allerta</option>
+<option value="Just Another Hand">Just Another Hand</option>
+<option value="Tinos">Tinos</option>
+<option value="Puritan">Puritan</option>
+<option value="Mountains of Christmas">Mountains of Christmas</option>
+<option value="Cabin">Cabin</option>
+<option value="Sniglet">Sniglet</option>
+<option value="Allan">Allan</option>
+<option value="Lato">Lato</option>
+<option value="Orbitron">Orbitron</option>
+<option value="Vibur">Vibur</option>
+<option value="Gruppo">Gruppo</option>
+<option value="Allerta Stencil">Allerta Stencil</option>
+<option value="Cousine">Cousine</option>
+<option value="Syncopate">Syncopate</option>
+<option value="Merriweather">Merriweather</option>
+<option value="Kristi">Kristi</option>
+<option value="Anonymous Pro">Anonymous Pro</option>
+<option value="Coda">Coda</option>
+<option value="Corben">Corben</option>
+<option value="Buda">Buda</option>
+<option value="Bentham">Bentham</option>
+<option value="Lekton">Lekton</option>
+<option value="UnifrakturMaguntia">UnifrakturMaguntia</option>
+<option value="UnifrakturCook">UnifrakturCook</option>
+<option value="Kenia">Kenia</option>
+<option value="Rock Salt">Rock Salt</option>
+<option value="Calligraffitti">Calligraffitti</option>
+<option value="Cherry Cream Soda">Cherry Cream Soda</option>
+<option value="Chewy">Chewy</option>
+<option value="Coming Soon">Coming Soon</option>
+<option value="Crafty Girls">Crafty Girls</option>
+<option value="Crushed">Crushed</option>
+<option value="Fontdiner Swanky">Fontdiner Swanky</option>
+<option value="Homemade Apple">Homemade Apple</option>
+<option value="Irish Growler">Irish Growler</option>
+<option value="Kranky">Kranky</option>
+<option value="Luckiest Guy">Luckiest Guy</option>
+<option value="Permanent Marker">Permanent Marker</option>
+<option value="Schoolbell">Schoolbell</option>
+<option value="Slackey">Slackey</option>
+<option value="Sunshiney">Sunshiney</option>
+<option value="Unkempt">Unkempt</option>
+<option value="Walter Turncoat">Walter Turncoat</option>
+		</field>
+		<field name="contenttitlefont" type="list" default="no" label="Conten Heading Font" description="This setting allows you to set a special font for all content articles titles.">
+<option value="no">-----Select-----</option>
+<option value="Droid Sans">Droid Sans</option>
+<option value="Droid Serif">Droid Serif</option>
+<option value="Lobster">Lobster</option>
+<option value="Yanone Kaffeesatz">Yanone Kaffeesatz</option>
+<option value="Nobile">Nobile</option>
+<option value="Reenie Beanie">Reenie Beanie</option>
+<option value="Tangerine">Tangerine</option>
+<option value="Neucha">Neucha</option>
+<option value="Josefin Slab">Josefin Slab</option>
+<option value="OFL Sorts Mill Goudy TT">OFL Sorts Mill Goudy TT</option>
+<option value="Molengo">Molengo</option>
+<option value="PT Sans">PT Sans</option>
+<option value="Vollkorn">Vollkorn</option>
+<option value="Just Me Again Down Here">Just Me Again Down Here</option>
+<option value="Ubuntu">Ubuntu</option>
+<option value="Cantarell">Cantarell</option>
+<option value="Inconsolata">Inconsolata</option>
+<option value="Crimson Text">Crimson Text</option>
+<option value="Cardo">Cardo</option>
+<option value="Cuprum">Cuprum</option>
+<option value="Droid Sans Mono">Droid Sans Mono</option>
+<option value="Neuton">Neuton</option>
+<option value="Arvo">Arvo</option>
+<option value="Philosopher">Philosopher</option>
+<option value="Old Standard TT">Old Standard TT</option>
+<option value="Josefin Sans">Josefin Sans</option>
+<option value="Covered By Your Grace">Covered By Your Grace</option>
+<option value="Arimo">Arimo</option>
+<option value="IM Fell">IM Fell</option>
+<option value="Geo">Geo</option>
+<option value="Copse">Copse</option>
+<option value="Raleway">Raleway</option>
+<option value="Allerta">Allerta</option>
+<option value="Just Another Hand">Just Another Hand</option>
+<option value="Tinos">Tinos</option>
+<option value="Puritan">Puritan</option>
+<option value="Mountains of Christmas">Mountains of Christmas</option>
+<option value="Cabin">Cabin</option>
+<option value="Sniglet">Sniglet</option>
+<option value="Allan">Allan</option>
+<option value="Lato">Lato</option>
+<option value="Orbitron">Orbitron</option>
+<option value="Vibur">Vibur</option>
+<option value="Gruppo">Gruppo</option>
+<option value="Allerta Stencil">Allerta Stencil</option>
+<option value="Cousine">Cousine</option>
+<option value="Syncopate">Syncopate</option>
+<option value="Merriweather">Merriweather</option>
+<option value="Kristi">Kristi</option>
+<option value="Anonymous Pro">Anonymous Pro</option>
+<option value="Coda">Coda</option>
+<option value="Corben">Corben</option>
+<option value="Buda">Buda</option>
+<option value="Bentham">Bentham</option>
+<option value="Lekton">Lekton</option>
+<option value="UnifrakturMaguntia">UnifrakturMaguntia</option>
+<option value="UnifrakturCook">UnifrakturCook</option>
+<option value="Kenia">Kenia</option>
+<option value="Rock Salt">Rock Salt</option>
+<option value="Calligraffitti">Calligraffitti</option>
+<option value="Cherry Cream Soda">Cherry Cream Soda</option>
+<option value="Chewy">Chewy</option>
+<option value="Coming Soon">Coming Soon</option>
+<option value="Crafty Girls">Crafty Girls</option>
+<option value="Crushed">Crushed</option>
+<option value="Fontdiner Swanky">Fontdiner Swanky</option>
+<option value="Homemade Apple">Homemade Apple</option>
+<option value="Irish Growler">Irish Growler</option>
+<option value="Kranky">Kranky</option>
+<option value="Luckiest Guy">Luckiest Guy</option>
+<option value="Permanent Marker">Permanent Marker</option>
+<option value="Schoolbell">Schoolbell</option>
+<option value="Slackey">Slackey</option>
+<option value="Sunshiney">Sunshiney</option>
+<option value="Unkempt">Unkempt</option>
+<option value="Walter Turncoat">Walter Turncoat</option>
+		</field>
+        
+</fieldset>
+		</fields>
+	</config>
+</extension>

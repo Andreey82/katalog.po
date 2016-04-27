@@ -1,0 +1,52 @@
+/* Design by VTEM http://www.vtem.net  All Rights Reserved */
+@import url(components.css);
+@import url(modules.css);
+@import url(layouts.css);
+@import url(layouts_style.css);
+@import url(navigation.css);
+@import url(forms.css);
+@import url(typo.css);
+@import url(3rd_party.css);
+@import url(error.css);
+@import url(offline.css);
+/* #######################  GENERAL SETTINGS ############################ */
+body {
+	color: #666;
+	margin:0;
+	padding:0;
+	line-height:1.6;
+	height:100%;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	background:url(../images/bg_body.jpg) repeat;
+	}
+/*  Global Formatting */
+h1 {font-size:180%;line-height: 1em;font-weight: 900;}
+h2 {font-size:160%;line-height: 1em;font-weight: 900;}
+h3 {font-size:140%;line-height: 1em;font-weight: 900;}
+h4 {font-size:110%;line-height: 1em;font-weight: 900;}
+h5 {font-size:100%;line-height: 1em;font-weight: 900;}
+h6 {font-size:80%;line-height: 1em;font-weight: 900;}
+a,a:link,a:visited{outline:none;}
+a:hover{text-decoration:underline;}
+img {border: 0 none; margin:0 8px 0 0; padding:0;}
+*{margin:0; padding:0}
+ul,ol{padding-left:10px; margin-left:12px; clear:both;}
+p{ padding-bottom:8px; margin:0px 0px 0px 0px;}
+pre, blockquote, h1, h2, h3, h4, h5, h6{
+    margin: 0px 0;
+    padding: 0px 0px 0px 0px;
+}
+/* Clears Divs */
+.clr{clear: both; height:0px; overflow: hidden; display:block;}
+/* Clearfix  */
+* html .clearfix{ height:1%;}
+html[xmlns] .clearfix{ display:block;}
+.clearfix:after{
+	clear:both;
+	content:".";
+	display:block;
+	height:0;
+	visibility:hidden;
+}
+/* #######################  END GENERAL SETTINGS ############################ */

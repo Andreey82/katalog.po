@@ -1,0 +1,66 @@
+/* Joomla Overrides */
+.panelform{background:#ddd; padding:0; margin:0;}
+.panelform label{font-size: 95%;text-shadow: 1px 1px #fff;white-space: nowrap;font-weight: normal !important;color: #666 !important;text-transform: uppercase}
+.panelform li {
+clear:both;
+position: relative; 
+display:block;
+padding:2px 0px !important;
+border-bottom:1px dotted #ddd;
+*border-bottom:none;
+}
+.panelform h2{
+background:#c60;
+height:30px;
+line-height:30px;
+font-size:120%;
+text-transform:uppercase;
+padding:0 10px;
+margin:0;
+color:#fff;
+text-align:left;
+width:425px;
+}
+/* InputText */
+.text_area{background: url(radios/images/textinput.gif);height:23px;border:0 !important;padding:0 5px;color:#555;text-shadow:1px 1px #fff;font-size:13px;outline:0; line-height:23px; width:117px;}
+.text_area:focus{background-color: transparent;color:#d06712;}
+.checkbox, .radio {
+	width: 19px;
+	height: 25px;
+	padding: 0 5px 0 0;
+	background: url(radios/images/checkbox.gif) no-repeat;
+	display: block;
+	float: left;
+}
+.radio {
+	background: url(radios/images/radio.gif) no-repeat;
+}
+.select {
+	position: absolute;
+	width: 158px; /* With the padding included, the width is 190 pixels: the actual width of the image. */
+	height: 21px;
+	padding: 0px 24px 0 8px;
+	color: #fff;
+	font: 12px/21px arial,sans-serif;
+	background: url(radios/images/select.gif) no-repeat;
+	overflow: hidden;
+	margin-top:5px;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{
+ span.select {margin-left:145px;}
+ }
+@media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0) {
+ span.select {margin-left:145px;}
+ }
+.panelform ul li fieldset label{clear:none;color:#666; min-width:60px; max-width:60px; }
+.panelform ul li fieldset{padding:0; margin:0; background:none !important;}
+.panelform ul li select{float:none;}
+.panelform ul li:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+	zoom: 1;
+    }

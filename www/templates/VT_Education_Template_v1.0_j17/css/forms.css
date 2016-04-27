@@ -1,0 +1,124 @@
+/* Design by Brian Diaz of Media 65 @ http://www.m65.net  All Rights Reserved */
+/* ##################### FORM SECTION  #####################*/	
+
+#com-form-login{ margin:0px; padding:0; clear:both;}
+fieldset{
+border:1px solid #ddd;
+padding:5px 5px 5px 10px;
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+border-radius:3px;
+margin:5px 0;
+}
+fieldset.input_form{ margin:5px 3px !important;}
+dl.contentpane{ width:100%;}
+dl.contentpane dt, dl.contentpane dd{ width:70%; margin:5px 0px; float:left;}
+#vt_footer fieldset{padding:5px 5px 10px 0px;}
+fieldset legend{
+font-weight:bold; 
+text-transform:uppercase; 
+padding:3px 8px !important;
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+border-radius:3px;
+color:#666;
+}
+fieldset.input_form{
+	margin-left:0px\9;
+	clear:both;
+}
+.inputbox,#billingDefaultAddress input, dl.contentpane dd input, .profile-edit dd input,
+.profile-edit dd select,  .login-fields input, input#jform_email, .contact-form input.required, .contact-email #jform_contact_message{
+padding:5px;
+width:210px;
+margin:5px 0;
+border:1px solid #ddd;
+background:#fff;
+color:#666;
+}
+#vt_footer .inputbox {
+    background: #555;
+    border: 1px solid #666666;
+    color: #999999;
+}
+.filter-search select{background:#fff !important;}
+select#limit, select.inputbox{ position:relative; *top:0px !important; *background:#fff !important;}
+.contact-email #jform_contact_message{ width:450px;}
+.filters #filter-search, .filters #limit{ position:relative; *top:10px;}
+.login-fields{ padding:10px 0px; }
+.login-fields label{ width:100px; padding-top:10px; float:left;}
+.contact-email div{ width:200px; clear:both;}
+.contact-form .button{ margin:15px 0px; float:left;}
+.login-fields input{}
+#vt_bottom .inputbox, #billingDefaultAddress input{
+background:#444;
+border: 1px solid #666666;
+color: #999999;
+}
+#vt_top .search .inputbox,#billingDefaultAddress input{
+background:none;
+border:none;
+}
+#register_stretcher input{margin:0; padding:2px;}
+input[type="checkbox"]{
+background:none;
+width:30px;
+}
+select.inputbox{
+border:1px solid #ddd;
+color:#666;
+background:#fff !important;
+}
+select#limit{width:50px; position:relative; *top:7px !important; *margin-left:10px;}
+.login_lost,.input_form ul{list-style:none; margin:0; padding:5px 0 0 0px;}
+.login_lost a,.input_form a{
+background: url("../images/li_arrow.gif") no-repeat scroll 2px center transparent;
+border-bottom: medium none !important;
+padding: 2px 5px 2px 15px !important;
+text-decoration: none;
+}
+#login-form fieldset.userdata{
+border:none;
+background:none;
+}
+#vt_nav_left #form-login .inputbox,#vt_nav_right #form-login .inputbox{
+border:1px solid #bbbbbb;
+width:94%;
+background:#ddd;
+}
+#vt_top label{font-weight:bold; color:#999;}
+.button,div.button_searchb .form_searchb_submit, .registration div a, .profile-edit div button, .profile-edit div a{
+font-weight:bold;
+text-transform:uppercase;
+color:#ccc !important;
+padding:8px 15px !important;
+*padding:4px 15px !important;
+border:none;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+border-radius:5px;
+background-color:#333;
+font-size:80%;
+text-align:center;
+background: -moz-linear-gradient(100% 100% 90deg, #555, #777);
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#555), to(#777));
+border:1px solid #666;
+}
+.registration div a, .profile-edit div a{
+padding:10px 15px!important;
+background: -moz-linear-gradient(100% 100% 90deg, #555, #777);
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#555), to(#777));
+}
+#member-registration div a{*padding:10px 15px; position:relative; *top:-9px;}
+.button:hover,div.button_searchb .form_searchb_submit:hover, .registration div a:hover, .profile-edit div button:hover, .profile-edit div a:hover
+{
+background: -moz-linear-gradient(100% 100% 90deg, #777, #555);
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#777), to(#555)); 
+color:#fff; cursor:pointer; text-decoration:none;
+}
+#contact_text{width:450px; overflow:auto;}
+.vt_published_link .inputbox,#agreed_field,#agreed_input{width:20px;}
+.vt_payment_methods .inputbox{width:120px; margin:2px 10px;}
+div.vtem_banneritem img{margin:0 !important;}
+#com-form-login-remember #remember{width:20px; border:none;}
+/* ##################### END FORM SECTION  ##################### */	

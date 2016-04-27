@@ -1,0 +1,147 @@
+/* Design by VTEM http://www.vtem.net  All Rights Reserved */
+.vtem_wapper{
+
+}
+#vt_bottom .vt_heading_style,#vt_bottom .vt_heading_style h3{
+background:none !important;
+border:none;
+box-shadow:none;
+color:#FFF;
+margin:0px;
+padding:0px;
+font-weight:bold;
+padding-left:0px;
+}
+#vt_drawer{ color:#999; text-align:center; padding-top:95px;}
+#vt_drawer h3{ font-size:24px; font-weight:bold; text-transform:uppercase; line-height:48px;}
+#vt_drawer h2{ font-size:26px; font-weight:normal; line-height:48px;}
+#vt_drawer h1{ font-size:36px; font-weight:bold; text-transform:uppercase; line-height:58px;}
+.moduletable_newshead strong{ font-size:18px; font-weight:bold;}
+.moduletable_clients{padding:10px 0;}
+.moduletable_clients h3{
+font-size:160%;
+font-style:italic;
+font-weight:bold;
+color:#0393bc;
+}
+.vt_module_latest table td{
+padding:15px 0;
+border-bottom:1px solid #eee;
+}
+
+.moduletable_infolates table{
+	text-align:left;
+	margin-bottom:5px;
+	display:block;
+	height:86px;
+	padding:5px;
+	background:url(../images/vt_bg_sevide.jpg) center no-repeat;
+	width:100%;
+
+	}
+.moduletable_infolates h4{ font-size:15px; font-weight:bold; text-transform:uppercase; line-height:24px;}
+
+div.componentheading span{font-weight:bold; text-transform:uppercase;}
+.poll,.pollstableborder{width:100%;}
+.pollstableborder td,.poll thead td{padding:5px; text-align:left;}
+#vt_bottom img{padding:5px; display:block;}
+.vt_bottom_style{ background:#333; color:#ccc;}
+#vt_bottom ul{margin:0; padding:0px; list-style:none;}
+#vt_bottom ul li a,#vt_bottom ul li a:link,#vt_bottom ul li a:visited{
+background:url(../images/li_arrow.gif) left 12px no-repeat;
+padding:0px 5px 0px 12px;
+display:block;
+font-weight:normal;
+}
+#vt_bottom ul li a:hover{ color:#fff !important;}
+#vt_bottom ul.login_lost a{
+background:url(../images/li_arrow11.gif) 2px 8px no-repeat !important;
+}
+#vt_bottom .button_round{ color:#fff;}
+#vt_bottom .vt_module_inside{ padding:0px 5px;}
+#vt_bottom h3{ padding:0px 0px 5px 0px;}
+#vt_bottom .vt_heading_style .vt_heading1{ padding:0;}
+.bannerheader{font-weight:bold;}
+.banneritem_text{
+margin:5px 0;
+border-bottom:1px dotted #333;
+padding:3px 0;
+}
+.moduletable_Testimonials strong{ font-size:14px; color:#ccc; font-weight:bold;}
+.moduletable_Testimonials blockquote{ padding-top:5px; color:#999; line-height:20px;}
+.banneritem_text a{font-weight:bold; border-bottom:none !important;}
+.bannerfooter_text,.bannerfooter{font-style:italic; float:right;}
+.moduletable_clients img{margin:0; padding:0;}
+.separator_bottom{ float:left; overflow:hidden;width:25%;}
+.widthinset25 .moduletable{ margin:10px 0px 0px 4px; width:98%;}
+.separator_bottom_left{
+	background:#1e1915;
+	width:284px;
+	margin:-1px 0px 0px -2px;
+	padding:0px 0px 10px 0px;
+}
+.width100{ width:100%;}
+.width50{ width:50%;}
+.width33{ width:33.33%}
+.width25{ width:25%;}
+.width20{ width:20%;}
+.width15{ width:16.66%;}
+.cols-2 .item{ width:45%; padding-right:30px; float:left;}
+.widthinset25 .moduletable a.results{ color:#cc6600; text-transform:uppercase;}
+.widthinset25 .moduletable h3{
+	color:#cc6600;
+	font-size:12px;
+	text-transform:uppercase;
+}
+.separator_bottom_left .vt_module_xhtml_content p{ padding:10px 0px; margin:0px; color:#999;}
+.separator_bottom_left .vt_module_xhtml_content p a{ color:#cc6600;}
+.separator_bottom_left .vt_module_xhtml_content p a:hover{color:#cc6600; text-decoration:underline;}
+.separator_bottom ul li a{ color:#ccc;}
+
+#gotop{ position:relative; top:5px;}
+#gotop p {
+    right: 0px;
+    margin: 0;
+    overflow: visible;
+    position: absolute;
+    top: -3px;
+	padding:0px;
+    z-index: 99999;
+}
+#gotop p span{ display:none;}
+#gotop p a{
+display: block;
+background:url(../images/gotop.png) center top no-repeat;
+height: 11px;
+width: 22px;
+}
+.readmore a{
+	background:url(../images/vtem_bgreadon.png) left center no-repeat;
+	height:23px;
+	line-height:23px;
+	border:1px solid #ddd !important;
+	padding:0px 10px 0px 20px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	color:#666 !important;
+	float:right;
+}
+.readmore a:hover{ text-decoration:none;}
+
+#vt_footer .moduletable_statistics dt {
+    font-weight: normal;
+    width: 45%;
+	font-weight:bold;
+	float:left;
+}
+#vt_footer .moduletable_statistics dd{
+	font-weight: normal;
+    width: 55%;
+	float:left;
+}
+#vt_footer .moduletable_statistics dd, #vt_footer .moduletable_statistics dt  {
+    float: left;
+    margin: 0;
+    padding: 4px 0 4px 0;
+}

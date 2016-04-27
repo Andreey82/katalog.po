@@ -1,0 +1,75 @@
+/**
+ * CSS Document for offline page
+ * @version $Id: offline.css 14401 2010-01-26 14:10:00Z louis $
+ * @package Joomla
+ * @copyright Copyright (C) 2005 - 2010 Open Source Matters. All rights reserved.
+ * @license GNU/GPL, see LICENSE.php
+ * Joomla! is free software and parts of it may contain or be derived from the
+ * GNU General Public License or other free or open source software licenses.
+ * See COPYRIGHT.php for copyright notices and details.
+ */
+/* -- id styles ------------------------------------- */
+
+
+body#vtem_warper_offline{ margin:0 auto; padding: 0px; background:#fff url(../images/bg_body.jpg) repeat;}
+
+#frame_offline img  { border: 0 none; }
+
+#frame_offline {
+	margin: 0 auto;
+	width:550px;
+	padding-top:30px;
+}
+
+#frame_offline h2{ font-size:18px; font-weight:normal; color:#666; text-align:center; padding:0px 100px; line-height:30px;}
+
+#frame_offline form {
+	text-align: left;
+}
+
+
+
+/* -- class styles ---------------------------------- */
+
+.outline {
+  
+}
+
+/* -- form styles ----------------------------------- */
+
+#frame_offline .vtem_logo_offline{ width:201px; height:90px; padding-bottom:20px; position:relative; left:0px; top:0px; }
+#frame_offline form    { margin:0 auto; width:250px; }
+#frame_offline form p  { margin: 0; padding: 0; display:block; }
+#frame_offline form fieldset { border: 0 none; margin: 0em; padding: 0.2em;}
+#frame_offline label         { display: block; float: left; }
+#frame_offline input 		  { padding: 1px; }
+#frame_offline input.button  { width: auto; height: 1.8em; cursor: pointer; }
+
+#frame_offline label   { margin: 5px 0px 2px 0px; display:block; width:100%;}
+#frame_offline form p  { padding: 0.2em 0 0.2em 0; display:block; clear:both; }
+#frame_offline form br  { display: none; }
+#frame_offline input    { border: 1px solid #ccc; background:#fff; color:#666; width:80%; padding:5px;}
+#frame_offline input		 { background-color: white;}
+#frame_offline input:hover { border-color:  #cc6600; }
+
+
+
+#frame_offline #frmlogin	      { margin: 0 10px 0 10px;  }
+#frame_offline #frmlogin fieldset.button { text-align: right; }
+#frame_offline p#form-login-remember{ width:100%; display:block;}
+#frame_offline p#form-login-remember label{ width:35%; float:left;}
+#frame_offline p#form-login-remember .inputbox{ width:30px; float:left; background:none; border:none; position: relative; top: 7px;}
+#frame_offline p#vtem-form-login .button_offline{ 
+	width:84px; 
+	height:23px; 
+	background:#bbb;
+	border:none;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px; 
+	color:#666; 
+	font-weight:bold; 
+	padding:0px;
+	padding-bottom:2px;
+ }
+#frame_offline p#vtem-form-login .button_offline:hover{ cursor:pointer;}
